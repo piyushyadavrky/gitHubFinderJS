@@ -1,0 +1,285 @@
+//poori css aur coloring maine hi ki hai bhai.. bas theme aur colours gemini se puche hain
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f0c15;
+  font-family: Roboto;
+}
+
+.mainDiv {
+  height: 580px;
+  background-color: #1a101f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; 
+  max-width: 500px;
+  border: 1px solid rgba(255, 121, 198, 0.2);
+  border-radius: 16px;
+}
+
+.mainTitle {
+  font-size: 36px;  
+  font-weight: 700;
+  color: aliceblue;
+  margin-top: 10px;
+  color: #ff79c6;
+}
+
+.searchBoxDiv {
+  margin: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+}
+
+.inputBoxDiv {
+ display: inline-block;
+ 
+}
+
+.inputBox {
+  height: 36px;
+  margin-left: 30px;
+  width: 269px;
+  padding-left: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #24142d; 
+  color: #fff; 
+  border: 1px solid #5a2e5e;
+}
+
+
+
+.searchButtonDiv {
+  display: inline-block;
+}
+
+.searchButton {
+  height: 36px;
+  margin-right: 30px;
+  margin-left: -1px;
+  width: 110px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff79c6;
+  border: 1px solid rgb(177, 175, 175);
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: background-color 0.15s;
+  color: #1a101f;
+}
+
+.searchButton:hover {
+    background-color: rgb(232, 230, 230);
+    background-color: #ff92d0;
+}
+
+.searchButton:active {
+    background-color: rgb(163, 161, 161);
+}
+
+
+.mainInfoPage {
+  width: 80%;
+  background-color: #23122c;
+  border-radius: 12px;
+  padding: 15px;
+  max-height: 400px;
+}
+
+.photoNameUsernameDiv {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.photoDiv {
+  display: inline-block;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.baadmeinPhoto {
+  border: 2px solid red;
+}
+
+.nameUsernameDiv {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.nameDiv {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.usernameDiv {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff79c6;
+}
+
+.bioDiv {
+  background-color: #190b20;
+  min-height: 50px;
+  border-radius: 8px;
+}
+
+.biochildDiv {
+  padding: 8px;
+  display: flex;
+  
+}
+
+.bioTextDiv {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  width: 36px;
+  color: #ff79c6;
+}
+
+.bioShowDiv {
+  font-size: 13px;
+  overflow-wrap: break-word;
+  line-height: 1.2; 
+  flex: 1;
+  min-width: 0;
+  width: 90%;
+  max-width: 430px;
+  color: #f1e6f5;
+}
+
+.statsDiv {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statsChildDiv {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.reposShowDiv {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2f143d;
+}
+
+.reposTextDiv {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffb3d9;
+}
+
+.reposDiv {
+  color: #ffffff;
+}
+
+.followersShowDiv {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2f143d;
+}
+
+.followersTextDiv {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffb3d9;
+}
+
+.followersDiv {
+  color: #ffffff;
+}
+
+.followingShowDiv {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2f143d;
+}
+
+.followingTextDiv {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffb3d9;
+}
+
+.followingDiv {
+  color: #ffffff;
+}
+
+.extraStatsDiv {
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.extraStatsChildDiv {
+  width: 94%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countryShowDiv {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d4b8e2;
+}
+
+.githubLinkDiv {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff79c6 ;
+}
