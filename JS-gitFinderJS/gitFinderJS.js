@@ -46,6 +46,20 @@ inputBoxvar.addEventListener('keydown', (event)=> {
 async function githubuserFetchData() {
   username = inputBoxvar.value;
   const response = await  fetch(`https://api.github.com/users/${username}`);
+
+if (!response.ok) {
+      profileName.innerText = "User Not Found";
+      bio.innerText = "Please enter a valid GitHub username.";
+      usernameDiv.innerText = "Invalid Username";
+      repoCount.innerText = "-";
+      followersCount.innerText = "-";
+      followingCount.innerText = "-";
+      country.innerText = "-";
+      githubLink.innerText = "-";
+      profilePhoto.innerHTML = `<img src="./images-gitFinderJS/inchidentt.png" class="photo">`;
+      return; 
+    }
+
   const data = await response.json();
 
   console.log(data);
